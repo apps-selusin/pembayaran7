@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration date="2019/01/12" author="e.World Technology Ltd.">
+  <project id="{6E7B9E1D-9A99-4CA8-B431-15847F998A66}" file="" name="pembayaran7_prj" product="PHPMaker" version="13.0" datetime="2019/01/12 01:20:36" languagefolder="phplang" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0">
+    <table id="cf01_home_php" name="cf01_home.php" caption="Home" userlevel="-2,&quot;Anonymous&quot;,8;0,&quot;Default&quot;,0" priv="1" />
+    <table id="t0101_tahunajaran" name="t0101_tahunajaran" caption="Tahun Ajaran" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="t0102_sekolah" name="t0102_sekolah" caption="Sekolah" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="t0103_kelas" name="t0103_kelas" caption="Kelas" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="t0104_daftarsiswamaster" name="t0104_daftarsiswamaster" caption="Daftar Kelas" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="t0105_daftarsiswadetail" name="t0105_daftarsiswadetail" caption="Siswa" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="t0106_iuran" name="t0106_iuran" caption="Iuran" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="t0201_siswa" name="t0201_siswa" caption="Siswa" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="t0202_siswaiuran" name="t0202_siswaiuran" caption="Iuran" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="t0301_bayarmaster" name="t0301_bayarmaster" caption="Pembayaran" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="t0302_bayardetail" name="t0302_bayardetail" caption="Rincian" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="t9996_employees" name="t9996_employees" caption="t 9996 employees" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="t9997_userlevels" name="t9997_userlevels" caption="t 9997 userlevels" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="t9998_userlevelpermissions" name="t9998_userlevelpermissions" caption="t 9998 userlevelpermissions" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="t9999_audittrail" name="t9999_audittrail" caption="t 9999 audittrail" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+  </project>
+</configuration>
