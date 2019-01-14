@@ -1364,13 +1364,13 @@ if (EW_DEBUG_ENABLED)
 
 // Write your table-specific startup script here
 // document.write("page loaded");
-// reload page setelah ada perubahan siswa_id
-// memanggil kembali halaman ENTRY PEMBAYARAN,
-// isi DETAIL DATA disesuaikan dengan rincian IURAN tiap-tiap siswa
+	// reload page setelah ada perubahan siswa_id
+	// memanggil kembali halaman ENTRY PEMBAYARAN,
+	// isi DETAIL DATA disesuaikan dengan rincian IURAN tiap-tiap siswa
 
-$('[data-table=t0301_bayarmaster][data-field=x_siswa_id]').change(function() {
-	window.location = "t0301_bayarmasteradd.php?showdetail=t0302_bayardetail&siswa_id="+$(this).val()+"&siswa_id_value="+$('#sv_x_siswa_id').val();
-});
+	$('[data-table=t0301_bayarmaster][data-field=x_siswa_id]').change(function() {
+		window.location = "t0301_bayarmasteradd.php?showdetail=t0302_bayardetail&siswa_id="+$(this).val()+"&siswa_id_value="+$('#sv_x_siswa_id').val();
+	});
 </script>
 <?php include_once "footer.php" ?>
 <?php
