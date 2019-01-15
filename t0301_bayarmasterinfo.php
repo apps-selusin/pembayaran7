@@ -1187,6 +1187,11 @@ class ct0301_bayarmaster extends cTable {
 	function Row_Inserted($rsold, &$rsnew) {
 
 		//echo "Row Inserted"
+		// update di tabel t0202_siswaiuran
+		// memberi flag sebagai tanda bahwa sudah melakukan pembayaran pada periode yang dipilih
+		// oleh user
+
+		f_updatesiswaiuran($rsnew);
 	}
 
 	// Row Updating event

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<ew-language date="2019/1/14" version="13.0.0" id="en" name="English" desc="English" author="e.World Technology Ltd.">
+<ew-language date="2019/1/15" version="13.0.0" id="en" name="English" desc="English" author="e.World Technology Ltd.">
   <!-- 
 	*** Important Notes:
 	1. Language ID should follow: https://developers.google.com/recaptcha/docs/language,
@@ -583,6 +583,9 @@
   <project>
     <phrase id="bodytitle" value="Sistem Informasi Pembayaran" />
     <phrase id="footertext" value="&amp;copy;2016 e.World Technology Ltd. All rights reserved." />
+    <menu id="66">
+      <phrase id="menutext" value="v 0301 bayarmasterdetail" />
+    </menu>
     <menu id="40">
       <phrase id="menutext" value="Menu Utama" />
     </menu>
@@ -1076,6 +1079,45 @@
       </field>
       <field id="newvalue">
         <phrase id="fldcaption" value="newvalue" />
+      </field>
+    </table>
+    <table id="v0301_bayarmasterdetail">
+      <phrase id="tblcaption" value="v 0301 bayarmasterdetail" />
+      <field id="bayarmaster_id">
+        <phrase id="fldcaption" value="bayarmaster id" />
+      </field>
+      <field id="tahunajaran_id">
+        <phrase id="fldcaption" value="tahunajaran id" />
+      </field>
+      <field id="siswa_id">
+        <phrase id="fldcaption" value="siswa id" />
+      </field>
+      <field id="nomor">
+        <phrase id="fldcaption" value="Nomor" />
+      </field>
+      <field id="tanggal">
+        <phrase id="fldcaption" value="Tanggal" />
+      </field>
+      <field id="total">
+        <phrase id="fldcaption" value="Total" />
+      </field>
+      <field id="bayardetail_id">
+        <phrase id="fldcaption" value="bayardetail id" />
+      </field>
+      <field id="iuran_id">
+        <phrase id="fldcaption" value="iuran id" />
+      </field>
+      <field id="periode1">
+        <phrase id="fldcaption" value="Periode 1" />
+      </field>
+      <field id="periode2">
+        <phrase id="fldcaption" value="Periode 2" />
+      </field>
+      <field id="keterangan">
+        <phrase id="fldcaption" value="Keterangan" />
+      </field>
+      <field id="jumlah">
+        <phrase id="fldcaption" value="Jumlah" />
       </field>
     </table>
   </project>

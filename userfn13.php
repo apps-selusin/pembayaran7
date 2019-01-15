@@ -34,6 +34,48 @@ function Page_Unloaded() {
 	//echo "Page Unloaded";
 }
 
+function f_updatesiswaiuran($rs) {
+
+	// array periode
+	$abulan = array(
+		1 => "Januari", "Februari", "Maret",
+		"April", "Mei", "Juni", "Juli", "Agustus", "September",
+		"Oktober", "November", "Desember");
+
+	// nol-kan dulu di data pembayaran sesuai tahun ajaran dan siswa
+	$q = "update t11_siswabayar set
+		b07 = '0', b08 = '0', b09 = '0', b10 = '0', b11 = '0', b12 = '0',
+		b01 = '0', b02 = '0', b03 = '0', b04 = '0', b05 = '0', b06 = '0'
+		where siswaspp_id in (select id from t08_siswaspp where siswa_id = ".$rs["siswa_id"].")";
+	ew_Execute($q);
+
+	// ambil data pembayaran sesuai tahunajaran_id dan siswa_id
+	$q = "select * from v0301_bayarmasterdetail where
+		tahunajaran_id = ".$rs["tahunajaran_id"]."
+		and siswa_id = ".$rs["siswa_id"]."";
+	$r = ew_Execute($q);
+
+	// recordset dilooping hingga eof
+	while (!$r->EOF) {
+		if (!is_null($r->fields["Periode1"])) {
+			$Periode1 = "P" . substr("00" . $r->fields["Periode1"], -2);
+			$Periode1value = 
+			$q = "update t0202_siswaiuran set " . $Periode1 . " = '1'
+				where iuran_id = ".$r->fields["iuran_id"];
+			ew_Execute($q);
+		}
+		if (!is_null($r->fields["Periode2"])) {
+			for ($i = $r->fields["Periode1"]; $i <= $r->fields["Periode2"]; $i++) {
+				$Periode2 = "P" . substr("00" . $i, -2);
+				$q = "update t0202_siswaiuran set " . $Periode2 . " = '1'
+					where iuran_id = ".$r->fields["iuran_id"];
+				ew_Execute($q);
+			}
+		}
+		$r->MoveNext();
+	}
+}
+
 function GetNextNomor() {
 	$sNextNomor = "";
 	$sLastNomor = "";
