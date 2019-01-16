@@ -36,17 +36,16 @@ function Page_Unloaded() {
 
 function f_updatesiswaiuran($rs) {
 
-	// array periode
-	$abulan = array(
-		1 => "Januari", "Februari", "Maret",
-		"April", "Mei", "Juni", "Juli", "Agustus", "September",
-		"Oktober", "November", "Desember");
-
 	// nol-kan dulu di data pembayaran sesuai tahun ajaran dan siswa
-	$q = "update t11_siswabayar set
-		b07 = '0', b08 = '0', b09 = '0', b10 = '0', b11 = '0', b12 = '0',
-		b01 = '0', b02 = '0', b03 = '0', b04 = '0', b05 = '0', b06 = '0'
-		where siswaspp_id in (select id from t08_siswaspp where siswa_id = ".$rs["siswa_id"].")";
+	$q = "
+		update
+			t0202_siswaiuran
+		set
+			P01 = '0', P02 = '0', P03 = '0', P04 = '0', P05 = '0', P06 = '0',
+			P07 = '0', P08 = '0', P09 = '0', P10 = '0', P11 = '0', P12 = '0'
+		where
+			tahunajaran_id = ".$rs["tahunajaran_id"]."
+			and siswa_id = ".$rs["siswa_id"]."";
 	ew_Execute($q);
 
 	// ambil data pembayaran sesuai tahunajaran_id dan siswa_id

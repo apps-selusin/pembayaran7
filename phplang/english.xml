@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<ew-language date="2019/1/15" version="13.0.0" id="en" name="English" desc="English" author="e.World Technology Ltd.">
+<ew-language date="2019/1/16" version="13.0.0" id="en" name="English" desc="English" author="e.World Technology Ltd.">
   <!-- 
 	*** Important Notes:
 	1. Language ID should follow: https://developers.google.com/recaptcha/docs/language,
@@ -582,7 +582,7 @@
   </global>
   <project>
     <phrase id="bodytitle" value="Sistem Informasi Pembayaran" />
-    <phrase id="footertext" value="&amp;copy;2016 e.World Technology Ltd. All rights reserved." />
+    <phrase id="footertext" value="&amp;copy;2019 Selaras Solusindo. All rights reserved." />
     <menu id="66">
       <phrase id="menutext" value="v 0301 bayarmasterdetail" />
     </menu>
